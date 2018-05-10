@@ -1,5 +1,11 @@
 # files ignored by git in the project cpa
 
+# eclipse config files
+.metadata
+
+# bouml config files
+docs/bouml/tools
+docs/bouml/stereotypes
 docs/bouml/*_includes
 docs/bouml/*_imports
 docs/bouml/*_settings
