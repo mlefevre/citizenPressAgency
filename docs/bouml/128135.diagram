@@ -4,11 +4,11 @@ classcanvas 128007 class_ref 128263 // Creator
   simpleclassdiagramsettings end
   xyz 264 195 2000
 end
-classcanvas 128135 class_ref 128391 // mentor
+classcanvas 128135 class_ref 128391 // Mentor
   simpleclassdiagramsettings end
   xyz 259 76 2005
 end
-classcanvas 128263 class_ref 128519 // editor
+classcanvas 128263 class_ref 128519 // Editor
   simpleclassdiagramsettings end
   xyz 274 316 2000
 end
@@ -30,6 +30,18 @@ note 131463 "The mentor is choosen by creator"
   xyzwh 22 27 2000 173 53
 note 131591 "The editor is choosen by creator for one specific article at a time."
   xyzwh 14 317 2000 177 63
+classcanvas 131719 class_ref 135175 // Contributor
+  simpleclassdiagramsettings end
+  xyz 700 114 2000
+end
+classcanvas 131847 class_ref 135303 // Corporate
+  simpleclassdiagramsettings end
+  xyz 704 222 2000
+end
+classcanvas 131975 class_ref 135431 // User
+  simpleclassdiagramsettings end
+  xyz 715 365 2000
+end
 line 129927 --->
   from ref 128007 z 3006 to ref 129799
 line 130183 --->
@@ -46,4 +58,10 @@ line 130951 --->
   from ref 128263 z 3006 to ref 130567
 line 131207 --->
   from ref 128007 z 3006 to ref 131079
+line 132103 --->
+  from ref 131719 z 3006 to ref 130567
+line 132231 --->
+  from ref 131847 z 3006 label "if released" max_width 255 xyz 587 184 3000 to ref 130567
+line 132359 --->
+  from ref 131975 z 3006 label "if published" max_width 255 xyz 581 253 3000 to ref 130567
 end
