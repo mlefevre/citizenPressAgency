@@ -1,0 +1,17 @@
+window_sizes 1398 980 328 1064 848 80
+cleanlooks_style
+diagrams
+  usecasediagram_ref 128135 // article creation
+    782 595 100 A4 0 0
+  active  usecasediagram_ref 128007 // peer review
+    623 593 99 A4 34 0
+  sequencediagram_ref 128263 // peer review
+    782 699 100 A4 0 0
+end
+show_stereotypes
+selected state_ref 128007 // Article status
+open
+  usecaseview_ref 128007 // review
+  usecaseview_ref 128135 // article creation
+end
+end

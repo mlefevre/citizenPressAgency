@@ -1,0 +1,77 @@
+format 218
+
+pseudostatecanvas 128007 pseudostate_ref 128007 // initial
+   xyz 73 79 2000
+end
+statecanvas 128135 state_ref 128135 // draft
+  
+  xyzwh 241 72 2000 51 31
+end
+statecanvas 128263 state_ref 128263 // open for review
+  
+  xyzwh 207 175 2000 119 31
+end
+statecanvas 128391 state_ref 128391 // Published
+  
+  xyzwh 226 296 2000 81 31
+end
+statecanvas 128519 state_ref 128519 // Archived
+  
+  xyzwh 229 442 2000 75 31
+end
+pseudostatecanvas 129159 pseudostate_ref 128135 // final
+   xyz 541 445 2000
+end
+pseudostatecanvas 129543 pseudostate_ref 128391 // choice
+   xyz 335 245 2000
+end
+statecanvas 130183 state_ref 128647 // Deleted
+  
+  xyzwh 519 102 2000 69 31
+end
+transitioncanvas 128647 transition_ref 128007 // propose for review
+  
+  from ref 128135 z 2001 label "propose for review" xyz 214.5 126 3000 to ref 128263
+  write_horizontally default show_definition default drawing_language default
+end
+transitioncanvas 128903 transition_ref 128263 // Released
+  
+  from ref 128391 z 2001 label "Released" xyz 241 348.5 3000 to ref 128519
+  write_horizontally default show_definition default drawing_language default
+end
+transitioncanvas 129031 transition_ref 128391 // <transition>
+  
+  from ref 128007 z 2001 to ref 128135
+  write_horizontally default show_definition default drawing_language default
+end
+transitioncanvas 129671 transition_ref 128647 // <transition>
+  
+  from ref 128263 z 2001 to ref 129543
+  write_horizontally default show_definition default drawing_language default
+end
+transitioncanvas 129799 transition_ref 128775 // YES
+  
+  from ref 129543 z 2001 label "YES" xyz 256.5 276 3000 to ref 128391
+  write_horizontally default show_definition default drawing_language default
+end
+transitioncanvas 130311 transition_ref 129159 // <transition>
+  
+  from ref 128135 z 2001 to ref 130183
+  write_horizontally default show_definition default drawing_language default
+end
+transitioncanvas 130439 transition_ref 129287 // <transition>
+  
+  from ref 128263 z 2001 to ref 130183
+  write_horizontally default show_definition default drawing_language default
+end
+transitioncanvas 130567 transition_ref 129415 // <transition>
+  
+  from ref 130183 z 2001 to ref 129159
+  write_horizontally default show_definition default drawing_language default
+end
+transitioncanvas 130695 transition_ref 129543 // <transition>
+  
+  from ref 128519 z 2001 to ref 129159
+  write_horizontally default show_definition default drawing_language default
+end
+end
