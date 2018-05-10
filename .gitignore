@@ -1,0 +1,5 @@
+# files ignored by git in the project cpa
+
+docs/bouml/*_includes
+docs/bouml/*_imports
+docs/bouml/*_settings
