@@ -1,0 +1,10 @@
+@Author: MLE
+@Date: 2018-05-10
+------------------------------------
+
+This folder is dedicated to uml documentation for project CPA (for Citizen Press Agency). The content of the folder is for BOUML. 
+Documentation is accessible using BOUML with bouml.prj file
+
+Pdf versions of those can be found in the docs folder. Be aware that those may be outdated.
+
+BOUML can be found at http://www.bouml.fr/index.html
